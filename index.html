@@ -1,85 +1,199 @@
-! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-<tête>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Express Chauffage : services de, plomberie et dépannage en Belgique." > >
-  <title>Express Chauffage | Chauffage & Plomberie</title>
-  <style>
-    * { box-sizing: border-box; marge: 0; rembourrage: 0; }
-    corps { police-famille: Arial, sans-serif; couleur: #17243a; line-hauteur: 1.6; }
-    en-tête { fond: #102442; couleur: blanc; rembourrage: 22px 7%; affichage: flex; justification-contenu: espace-entre; align-items: centre; flex-wrap: wrap; gap: 15px; }
-    .logo { police-taille: 23px; police-poids: gras; }
-    .logo span { couleur: #ff8a24; }
-    en-tête a { couleur: blanc; text-décoration: aucun; }
-    .hero { fond: linéaire-gradient(120deg, #102442, #1d4268); couleur: blanc; rembourrage: 85px 7%; }
-    .hero h1 { police-size: pince(32px, 5vw, 54px); largeur max: 700px; longueur-hauteur: 1.15; marge-bas: 22px; }
-    .hero p { police de caractères: 19px; largeur max: 600px; marge-bas: 28px; }
-    .btn { affichage: inline-block; fond: #ff8a24; couleur: #102442; rembourrage: 14px 23px; border-radius: 6px; text-décoration: none; police-poids: gras; }
-    section { rembourrage: 60px 7%; }
-    h2 { police de taille: 32px; marge-bas: 15px; couleur: #102442; }
-    .intro { max-largeur: 720px; marge-bas: 30px; }
-    .services { affichage: grille; grille-template-colonnes: repeat(auto-fit, minmax(220px, 1fr))); écart: 20px; marge-top: 30px; }
-    .service { rembourrage: 25px; bordure: 1px solide #e0e6ed; border-radius: 10px; fond: #fff; }
-    .service h3 { couleur: #102442; marge-bas: 10px; }
-    .service .symbol { police de caractères: 30px; marge-bas: 12px; }
-    .band { background: #f2f5f9; }
-    .contact { fond: #102442; couleur: blanc; texte-alignement: centre; }
-    .contact h2 { couleur: blanc; }
-    .contact p { marge: 12px 0 25px; }
-    pied de page { fond: #0a1729; couleur: #dce4ee; texte-align: centre; rembourrage: 22px; taille de police: 14px; }
-  </style>
-</tête>
-<corps>
-  <en-tête>
-    <div class="logo">EXPRESS <span>CHAUFFAGE</span></div>
-    <a href="#contact">Contactez-nous</a>
-  </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Express Chauffage : services de chauffage, plomberie et dépannage dans toute la Wallonie. Contactez-nous par téléphone.">
+    <title>Express Chauffage | Chauffage et Plomberie</title>
 
-  <Main>
-    <div class="hero">
-      <h1>Votre confort, notre</hi1>
-      <p>Vos travaux de et de chauffage en Belgique. Un service professionnel, à votre écoute pour vos installations et dépannages.</p>
-      <a class="btn" href="#contact">Demander un renseignement</a>
-    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <section>
-      <h2>Nos services</h2>
-      <p class="intro">Express Chauffage vous accompagnez-vous vos besoins en et plomberie.</p>
-      <div class="services">
-        <article class="service">
-          <div class="symbol">♨️</div>
-          <h3>Chauffage</h3>
-          <p>Installation, entretien et dépannage de vos équipements de chauffage.</p>
-        </article>
-        <article class="service">
-          <div class="symbol">🔧</div>
-          <h3>Plomberie</h3>
-          <p>Réparation des fuites, robinetterie et travaux de plomberie.</p>
-        </article>
-        <article class="service">
-          <div class="symbol">🚿</div>
-          <h3>Dépannage</h3>
-          <p>Intervention pour vos problèmes de plomberie et de chauffage.</p>
-        </article>
-      </div>
-    </section>
+        body {
+            font-family: Arial, sans-serif;
+            color: #263445;
+            background: #f5f8fc;
+            line-height: 1.6;
+        }
 
-    <section class="band">
-      <h2>Pourquoi choisir Express Chauffage ? </h2>
-      <p class="intro">Un à votre écoute, un travail et adaptées des solutions à vos pièces à télécharger, en Belgique selon.</p>
-    </section>
+        header {
+            background: #102b4e;
+            color: white;
+            padding: 22px 15px;
+            text-align: center;
+        }
 
-    <section class="contact" id="contact">
-      <h2>Contactez Express Chauffage</h2>
-      <p>Besoin d'un silic ou d'unannage ? Appelé-nous.</p>
-      <p>Ajoutez ici numéro votre de téléphone professionnel.</p>
-      <a class="btn" href="tel:+32XXXXXXXXX">Appeler maintenant</a>
-    </section>
-  </main>
+        header h1 {
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
 
-  <footer>
-    © 2026 Express Chauffage — Belgique
-  </footer>
-</corps>
+        header p {
+            color: #dce8f5;
+            margin-top: 5px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #163d68, #2475a9);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #f5a623;
+            color: #102b4e;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 13px 25px;
+            border-radius: 6px;
+            margin: 8px;
+        }
+
+        .button:hover {
+            background: #ffd078;
+        }
+
+        section {
+            padding: 45px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #163d68;
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .service {
+            background: white;
+            padding: 25px 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            flex: 1 1 230px;
+            max-width: 300px;
+        }
+
+        .service h3 {
+            color: #2475a9;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            background: #e8f1fa;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        .phone {
+            font-size: 25px;
+            font-weight: bold;
+            color: #163d68;
+            margin: 15px 0;
+        }
+
+        footer {
+            background: #102b4e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 27px;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>EXPRESS CHAUFFAGE</h1>
+        <p>Experts en chauffage et plomberie</p>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>Votre confort, notre priorité</h2>
+            <p>Chauffage, plomberie et dépannage en Wallonie.</p>
+            <a class="button" href="tel:+32494824372">Appelez-nous</a>
+        </div>
+
+        <section>
+            <h2>Nos services</h2>
+            <p>Des solutions adaptées à vos besoins pour votre habitation.</p>
+
+            <div class="services">
+                <div class="service">
+                    <h3>🔥 Chauffage</h3>
+                    <p>Installation, entretien et réparation de chauffage.</p>
+                </div>
+
+                <div class="service">
+                    <h3>🔧 Plomberie</h3>
+                    <p>Travaux de plomberie et réparation des installations.</p>
+                </div>
+
+                <div class="service">
+                    <h3>🛠️ Dépannage</h3>
+                    <p>Assistance pour vos problèmes de chauffage et de plomberie.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Votre spécialiste en Wallonie</h2>
+            <p>
+                EXPRESS CHAUFFAGE vous accompagne pour vos besoins
+                en chauffage et plomberie dans toute la Wallonie.
+            </p>
+        </section>
+
+        <section class="contact">
+            <h2>Contactez-nous</h2>
+            <p>Besoin d'informations ou d'un rendez-vous ? Contactez-nous par téléphone.</p>
+
+            <p class="phone">0494 82 43 72</p>
+
+            <a class="button" href="tel:+32494824372">Appelez-nous</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EXPRESS CHAUFFAGE - Tous droits réservés.</p>
+        <p>Chauffage et plomberie en Wallonie</p>
+    </footer>
+
+</body>
 </html>
